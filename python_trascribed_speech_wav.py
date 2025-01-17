@@ -76,7 +76,7 @@ def main():
         global message
         transcription = transcribe_audio(wav_file)
         print(f"\nTranscription for {wav_file}:\n{transcription}")
-        message = message + "<br>" + str({transcription}  + "<br>" )
+        message = message + "<br>" + str({transcription}) + "<br>"
 
 
 #if __name__ == "__main__":
