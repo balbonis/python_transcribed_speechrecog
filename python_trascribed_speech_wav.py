@@ -77,7 +77,7 @@ def main():
         transcription = transcribe_audio(wav_file)
 
         print(f"\nTranscription for {wav_file}:\n{transcription}")
-        message = str({transcription})
+        message = "<strong> Transcribing ... </strong>" + str({transcription})
 
 
 if __name__ == "__main__":
