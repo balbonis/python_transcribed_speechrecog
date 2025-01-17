@@ -26,6 +26,7 @@ def find_wav_files(directory):
 
 def transcribe_audio(file_path):
 
+   
     recognizer = sr.Recognizer()
 
     with sr.AudioFile(file_path) as source:
@@ -54,7 +55,6 @@ def transcribe_audio(file_path):
 
 def main():
 
-    global message
     directory = os.getcwd()  # Automatically use the current working directory
     
     print(f"Searching for .wav files in: {directory}\n")
@@ -71,18 +71,19 @@ def main():
         return
 
     
-
+  
     for wav_file in wav_files:
-
+        global message
         transcription = transcribe_audio(wav_file)
-
         print(f"\nTranscription for {wav_file}:\n{transcription}")
-        message = "<strong> Transcribing ... </strong>" + str({transcription})
+        message = message + "<br>" + str({transcription})
 
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+#    main()
 
+
+message = "<strong>KABOOM!!!! Transcribing your </strong> " 
 
 @app.route("/")
 def home():
