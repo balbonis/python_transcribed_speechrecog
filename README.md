@@ -5,6 +5,7 @@
 # Prerequisites:
 #       Flask
 #       pip install SpeechRecognition
+#       *.wav files (current path)
 # Run syntax:
 #          python -m flask --app .\python_transcribed_speech_wav.py run
 # Output:
