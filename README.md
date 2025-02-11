@@ -10,5 +10,6 @@
 #          python -m flask --app .\python_transcribed_speech_wav.py run
 # Output:
 #          localhost:5000
-#Azure DevOps Connected: 11-Feb-2025
+#Azure DevOps Connected: 
 #          https://dev.azure.com/chuwuru-aitech/SpeechRecognition/
+#          11-February-2025
